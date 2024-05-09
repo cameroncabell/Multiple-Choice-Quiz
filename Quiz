@@ -1,0 +1,137 @@
+print('Hello and welcome to The Quiz to find out which D&D class you are!')
+name = input('Please give me your name: ')
+
+#set up variables for different classes
+c1 = 0     #Barbarian
+c2 = 0     #Bard
+c3 = 0     #Cleric
+c4 = 0     #Druid
+c5 = 0     #Fighter
+c6 = 0     #Monk
+c7 = 0     #Paladin
+c8 = 0     #Ranger
+c9 = 0     #Rogue
+c10 = 0    #Sorcerer
+c11 = 0    #Warlock   
+c12 = 0    #Wizard
+c13 = 0    #DM
+
+#set up a function to check all the scores
+def printscores():
+    print(f'Barbarian = {c1}')
+    print(f'Bard = {c2}')
+    print(f'Cleric = {c3}')
+    print(f'Druid = {c4}')
+    print(f'Fighter = {c5}')
+    print(f'Monk = {c6}')
+    print(f'Paladin = {c7}')
+    print(f'Ranger = {c8}')
+    print(f'Rogue = {c9}')
+    print(f'Sorcerer = {c10}')
+    print(f'Warlock = {c11}')
+    print(f'Wizard = {c12}')
+    print(f'DM = {c13}')
+
+#Question 1
+print(f'Alright {name}, please answer using the number of your answer choice')
+print('Q1) When I fight, I like to...')
+print('     1) Hit them where it hurts- physically')
+print('     2) Use magic to weaken them in ways previously unimaginable')
+print('     3) Either stop the fight, or end it quickly by helping my friends')
+q1 = int(input('Your answer: '))
+if q1 == 1:
+    c1 = c1+1
+    c4 = c4+1
+    c5 = c5+1
+    c6 = c6+1
+    c7 = c7+1
+    c8 = c8+1
+    c9 = c9+1
+elif q1 == 2:
+    c2 = c2+1
+    c3 = c3+1
+    c4 = c4+1
+    c7 = c7+1
+    c10 = c10+1
+    c11 = c11+1
+    c12 = c12+1
+elif q1 == 3:
+    c2 = c2+1
+    c3 = c3+1
+    c10 = c10+1
+    c11 = c11+1
+    c12 = c12+1
+    c13 = c13+1
+else:
+    print('Nah you messed up, but here are your scores:')
+    printscores()
+
+#Question 2
+if q1 == 1:
+    print('Q2) What is your view on personal space?')
+    print("     1) I don't have boundaries")
+    print('     2) Respectable, but close when I need to be')
+    print('     3) Please get away from me')
+    q2 = int(input('Your answer: '))
+    if q2 == 1:
+        c1 = c1+1
+        c5 = c5+1
+        c6 = c6+1
+        c9 = c9+1
+    elif q2 == 2:
+        c4 = c4+1
+        c5 = c5+1
+        c8 = c8+1
+        c9 = c9+1
+    elif q2 == 3:
+        c8 = c8+1
+        c9 = c9+1
+    else:
+        print('Nah you messed up, but here are your scores:')
+        printscores()
+
+#Question 3
+if q1 == 2:
+    print('Q2) How beefy do you like being?')
+    print('     1) Me big')
+    print('     2) A little, nothing major')
+    print('     3) Honestly, if I get sneezed on, it might be too late')
+    q3 = int(input('Your answer: '))
+    if q3 == 1:
+        c1 = c1+1
+        c7 = c7+1
+    elif q3 == 2:
+        c2 = c2+1
+        c4 = c4+1
+    elif q3 == 3:
+        c3 = c3+1
+        c7 = c7+1
+        c10 = c10+1
+        c11 = c11+1
+        c12 = c12+1
+    else:
+        print('Nah you messed up, but here are your scores:')
+        printscores()
+
+#Question 4
+if q1 == 3:
+    print('Q2) What does "utility" mean to you?')
+    print('     1) The folks who fix my water pipes')
+    print('     2) Eighty billion options')
+    print('     3) Praying the Dying Away')
+    q4 = int(input('Your answer: '))
+    if q4 == 1:
+        c2 = c2+1
+        c4 = c4+1
+        c13 = c13+1
+    elif q4 == 2:
+        c10 = c10+1
+        c12 = c12+1
+    elif q4 == 3:
+        c3 = c3+1
+        c7 = c7+1
+        c11 = c11+1
+    else:
+        print('Nah you messed up, but here are your scores:')
+        printscores()
+
