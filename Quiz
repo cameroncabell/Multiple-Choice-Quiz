@@ -32,6 +32,85 @@ def printscores():
     print(f'Wizard = {c12}')
     print(f'DM = {c13}')
 
+#find the largest of the variables
+def calculate():
+    s = str('Would you like to see your other scores?')
+    y = str('       1) Yes')
+    n = str('       2) No')
+    if c1 > 100:
+        print(f'You are a Barbarian! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your Answer: '))
+    if c2 > 100:
+        print(f'You are a Bard! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your Answer: '))        
+    if c3 > 100:
+        print(f'You are a Cleric! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your Answer: '))
+    if c4 > 100:
+        print(f'You are a Druid! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your answer: '))
+    if c5 > 100:
+        print(f'You are a Fighter!{s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your answer: '))
+    if c6 > 100:
+        print(f'You are a Monk! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your Answer: '))
+    if c7 > 100:
+        print(f'You are a Paladin! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your answer: '))
+    if c8 > 100:
+        print(f'You are a Ranger! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your answer: '))
+    if c9 > 100:
+        print(f'You are a Rogue! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your answer: '))
+    if c10 > 100:
+        print(f'You are a Sorcerer! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your answer: '))
+    if c11 > 100:
+        print(f'You are a Warlock! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your Answer: '))
+    if c12 > 100: 
+        print(f'You are a Wizard! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your answer: '))
+    if c13 > 100:
+        print(f'You are a DM! {s}')
+        print(f'{y}')
+        print(f'{n}')
+        q100 = int(input('Your answer: '))
+
+
+    if q100 == 1:
+        print('Here are our other scores:')
+        printscores()
+    if q100 == 2:
+        print ('Have fun on your next adventure!')
+
+
 #Question 1
 print(f'Alright {name}, please answer using the number of your answer choice')
 print('Q1) When I fight, I like to...')
@@ -133,5 +212,61 @@ if q1 == 3:
         c11 = c11+1
     else:
         print('Nah you messed up, but here are your scores:')
+        printscores()
+
+#Question 5
+if q2 == 1:
+    print('Q3) You do that by being really fast?')
+    print('     1) I once ran a marathon in twelve seconds')
+    print("     2) Nope, just by sneakin' up on ya")
+    print('     3) Close enough to sneak a knife in')
+    print('     4) Nope, just by being really close')
+    q5 = int(input('Your answer: '))
+    if q5 == 1:
+        c6 = c6+1
+    elif q5 == 2 or q5 == 3:            #For boolean in the if/elif/else, specify each variable
+        c9 = c9+1
+        c5 = c5+1
+        c10 = c10+1
+        c2 = c2+1
+        c7 = c7+1
+    elif q5 == 4:
+        c1 = c1+1
+        c6 = c6+1
+        c5 = c5+1
+        c9 = c9+1
+    else:
+        print('Nah you messed up, but here are your scores:')
+        printscores()
+
+#Question 6
+if q2 == 2:
+    print('Q3) Are you an animal kind of person?')
+    print('     1) Not really')
+    print('     2) Absolutely')
+    q6 = int(input('Your answer: '))
+    if q6 == 1:
+        c9 = c9+1
+        c5 = c5+1
+        c10 = c10+1
+        c2 = c2+1
+        c7 = c7+1
+    elif q6 == 2:
+        c4 = c4+1
+        c8 = c8+1
+    else:
+        print('Nah you messed up, but here are your scores:')
+        printscores()
+    
+#Question 7
+if q2 == 3:
+    print("Q3) What's Katniss Everdeen to you?")
+    print('     1) A role model!')
+    print('     2) Who?')
+    q7 = int(input('Your Answer: '))
+    if q7 == 1:
+        c8 = c8+100
+        calculate()
+    else:
         printscores()
 

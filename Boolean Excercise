@@ -1,0 +1,16 @@
+def functiontest():
+    m = 0
+    print(m)
+
+n = float(input('type in a number 1-100: '))
+
+if n == 1 or n == 2:
+    print('Test one successful')
+elif n > 5 and n > 6:
+    print('Test two successful')
+elif n == 9 and n == 10:
+    print('Test three successful')
+else:
+    print('Test four successful')
+
+#functiontest()
